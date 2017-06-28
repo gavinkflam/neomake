@@ -67,7 +67,7 @@ augroup neomake
     au CursorMoved * call neomake#CursorMovedDelayed()
     " Force-redraw display of current error after resizing Vim, which appears
     " to clear the previously echoed error.
-    au VimResized * call timer_start(100, function('neomake#EchoCurrentError'))
+    " au VimResized * call timer_start(100, function('neomake#EchoCurrentError'))
   else
     au CursorMoved * call neomake#CursorMoved()
   endif
